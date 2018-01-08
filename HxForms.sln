@@ -1,0 +1,12 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27004.2006
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HxForms", "HxForms\HxForms.csproj", "{6F5D7B83-7B54-4342-8119-9F10FB610FB3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HxForms.Droid", "HxForms.Droid\HxForms.Droid.csproj", "{D44370F7-4B0F-4745-A9F1-716FB4A75E47}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HxForms.iOS", "HxForms.iOS\HxForms.iOS.csproj", "{1B801EAD-233E-488F-9E0B-E91B46DB70D2}"
+EndProject
+Global
+EndGlobal
