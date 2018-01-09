@@ -4,6 +4,7 @@ using System.Linq;
 
 using Foundation;
 using UIKit;
+using HxForms.iOS;
 
 namespace HxForms.Examples.iOS
 {
@@ -23,6 +24,7 @@ namespace HxForms.Examples.iOS
 		public override bool FinishedLaunching(UIApplication app, NSDictionary options)
 		{
 			global::Xamarin.Forms.Forms.Init ();
+            HxForms.iOS.HxForms.Init();
 			LoadApplication (new HxForms.Examples.App ());
 
 			return base.FinishedLaunching (app, options);

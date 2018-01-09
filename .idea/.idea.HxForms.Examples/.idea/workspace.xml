@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="ec16634f-42da-4a8c-a7a9-ed34151a7972" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/HxForms.Droid/HxForms.Droid.csproj" afterPath="$PROJECT_DIR$/HxForms.Droid/HxForms.Droid.csproj" />
+      <change beforePath="$PROJECT_DIR$/HxForms.Examples/HxForms.Examples.iOS/AppDelegate.cs" afterPath="$PROJECT_DIR$/HxForms.Examples/HxForms.Examples.iOS/AppDelegate.cs" />
+      <change beforePath="$PROJECT_DIR$/HxForms.Examples/HxForms.Examples/MainPage.xaml" afterPath="$PROJECT_DIR$/HxForms.Examples/HxForms.Examples/MainPage.xaml" />
+      <change beforePath="$PROJECT_DIR$/HxForms.Examples/HxForms.Examples/MainPage.xaml.cs" afterPath="$PROJECT_DIR$/HxForms.Examples/HxForms.Examples/MainPage.xaml.cs" />
+      <change beforePath="$PROJECT_DIR$/HxForms.iOS/HxForms.iOS.csproj" afterPath="$PROJECT_DIR$/HxForms.iOS/HxForms.iOS.csproj" />
+      <change beforePath="$PROJECT_DIR$/HxForms/Views/MultiPickerItemsModal.cs" afterPath="$PROJECT_DIR$/HxForms/Views/MultiPickerItemsModal.cs" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file leaf-file-name="MultiPickerItemsModal.cs" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/HxForms/Views/MultiPickerItemsModal.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="429">
+              <caret line="118" column="49" lean-forward="false" selection-start-line="118" selection-start-column="49" selection-end-line="118" selection-end-column="49" />
+              <folding>
+                <marker date="1515503123220" expanded="true" signature="6:157" ph="..." />
+                <marker date="1515503123220" expanded="true" signature="182:4910" ph="{...}" />
+                <marker date="1515503123220" expanded="true" signature="237:4908" ph="{...}" />
+                <marker date="1515503123220" expanded="true" signature="281:397" ph="{...}" />
+                <marker date="1515503123220" expanded="true" signature="643:910" ph="{...}" />
+                <marker date="1515503123220" expanded="true" signature="804:899" ph="{...}" />
+                <marker date="1515503123220" expanded="true" signature="833:885" ph="{...}" />
+                <marker date="1515503123220" expanded="true" signature="944:1333" ph="{...}" />
+                <marker date="1515503123220" expanded="true" signature="1093:1323" ph="{...}" />
+                <marker date="1515503123220" expanded="true" signature="1188:1239" ph="{...}" />
+                <marker date="1515503123220" expanded="true" signature="1377:1718" ph="{...}" />
+                <marker date="1515503123220" expanded="true" signature="1432:1708" ph="{...}" />
+                <marker date="1515503123220" expanded="true" signature="1514:1593" ph="{...}" />
+                <marker date="1515503123220" expanded="true" signature="1614:1694" ph="{...}" />
+                <marker date="1515503123220" expanded="true" signature="1753:2702" ph="{...}" />
+                <marker date="1515503123220" expanded="true" signature="1826:2690" ph="{...}" />
+                <marker date="1515503123220" expanded="true" signature="2108:2646" ph="{...}" />
+                <marker date="1515503123220" expanded="true" signature="2252:2628" ph="{...}" />
+                <marker date="1515503123220" expanded="true" signature="2314:2444" ph="{...}" />
+                <marker date="1515503123220" expanded="true" signature="2473:2606" ph="{...}" />
+                <marker date="1515503123220" expanded="true" signature="2743:3033" ph="{...}" />
+                <marker date="1515503123220" expanded="true" signature="2815:2972" ph="{...}" />
+                <marker date="1515503123220" expanded="true" signature="3070:3311" ph="{...}" />
+                <marker date="1515503123220" expanded="true" signature="3428:3864" ph="{...}" />
+                <marker date="1515503123220" expanded="true" signature="3505:3854" ph="{...}" />
+                <marker date="1515503123220" expanded="true" signature="3709:3789" ph="{...}" />
+                <marker date="1515503123220" expanded="true" signature="3930:4902" ph="{...}" />
+                <marker date="1515503123220" expanded="true" signature="3971:4173" ph="{...}" />
+                <marker date="1515503123220" expanded="true" signature="4035:4159" ph="{...}" />
+                <marker date="1515503123220" expanded="true" signature="4209:4277" ph="{...}" />
+                <marker date="1515503123220" expanded="true" signature="4312:4529" ph="{...}" />
+                <marker date="1515503123220" expanded="true" signature="4381:4515" ph="{...}" />
+                <marker date="1515503123220" expanded="true" signature="4773:4892" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/HxForms/Views/MultiPickerItemsModal.cs" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/HxForms/Views/MultiPickerItemsModal.cs" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="71" />
+    <option name="y" value="23" />
+    <option name="width" value="1609" />
+    <option name="height" value="1000" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="SolutionExplorer" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scratches" />
+      <pane id="SolutionExplorer">
+        <subPane>
+          <expand>
+            <path>
+              <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
+              <item name="HxForms.Examples (6 projects)" type="977d5f41:SolutionExplorerNodeRider" />
+            </path>
+            <path>
+              <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
+              <item name="HxForms.Examples (6 projects)" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="HxFormsLibs" type="977d5f41:SolutionExplorerNodeRider" />
+            </path>
+            <path>
+              <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
+              <item name="HxForms.Examples (6 projects)" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="HxFormsLibs" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="HxForms" type="977d5f41:SolutionExplorerNodeRider" />
+            </path>
+            <path>
+              <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
+              <item name="HxForms.Examples (6 projects)" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="HxFormsLibs" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="HxForms" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="Views" type="977d5f41:SolutionExplorerNodeRider" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+        <option name="show-file-system" value="false" />
+        <option name="show-all-items" value="false" />
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="settings.editor.selected.configurable" value="SolutionBuilderGeneralOptionsPageId" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected=".NET Project.HxForms.Examples.iOS">
+    <configuration name="Default" type="DotNetProject" factoryName=".NET Project">
+      <option name="EXE_PATH" value="" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <envs />
+      <option name="USE_MONO" value="0" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <option name="PROJECT_PATH" value="" />
+      <option name="PROJECT_EXE_PATH_TRACKING" value="1" />
+      <option name="PROJECT_ARGUMENTS_TRACKING" value="1" />
+      <option name="PROJECT_WORKING_DIRECTORY_TRACKING" value="1" />
+      <option name="PROJECT_KIND" value="None" />
+      <option name="PROJECT_TFM" value="" />
+    </configuration>
+    <configuration name="HxForms.Examples.iOS" type="DotNetProject" factoryName=".NET Project" temporary="true">
+      <option name="EXE_PATH" value="$PROJECT_DIR$/HxForms.Examples/HxForms.Examples.iOS/bin/iPhoneSimulator/Debug/HxForms.Examples.iOS.exe" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/HxForms.Examples/HxForms.Examples.iOS/bin/iPhoneSimulator/Debug" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <envs />
+      <option name="USE_MONO" value="0" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <option name="PROJECT_PATH" value="$PROJECT_DIR$/HxForms.Examples/HxForms.Examples.iOS/HxForms.Examples.iOS.csproj" />
+      <option name="PROJECT_EXE_PATH_TRACKING" value="1" />
+      <option name="PROJECT_ARGUMENTS_TRACKING" value="1" />
+      <option name="PROJECT_WORKING_DIRECTORY_TRACKING" value="1" />
+      <option name="PROJECT_KIND" value="XamarinIOS" />
+      <option name="PROJECT_TFM" value="Xamarin.iOS,Version=v1.0" />
+    </configuration>
+    <list size="2">
+      <item index="0" class="java.lang.String" itemvalue=".NET Project.Default" />
+      <item index="1" class="java.lang.String" itemvalue=".NET Project.HxForms.Examples.iOS" />
+    </list>
+    <recent_temporary>
+      <list size="1">
+        <item index="0" class="java.lang.String" itemvalue=".NET Project.HxForms.Examples.iOS" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="ec16634f-42da-4a8c-a7a9-ed34151a7972" name="Default" comment="" />
+      <created>1515502674782</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1515502674782</updated>
+      <workItem from="1515502679312" duration="610000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="610000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="71" y="23" width="1609" height="1000" extended-state="0" />
+    <layout>
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Errors In Solution" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3297414" sideWeight="0.5021753" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Unit Tests" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3297414" sideWeight="0.49782473" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Mongo Explorer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="NuGet" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24984463" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Build" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager />
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/HxForms/Views/MultiPickerItemsModal.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="429">
+          <caret line="118" column="49" lean-forward="false" selection-start-line="118" selection-start-column="49" selection-end-line="118" selection-end-column="49" />
+          <folding>
+            <marker date="1515503123220" expanded="true" signature="6:157" ph="..." />
+            <marker date="1515503123220" expanded="true" signature="182:4910" ph="{...}" />
+            <marker date="1515503123220" expanded="true" signature="237:4908" ph="{...}" />
+            <marker date="1515503123220" expanded="true" signature="281:397" ph="{...}" />
+            <marker date="1515503123220" expanded="true" signature="643:910" ph="{...}" />
+            <marker date="1515503123220" expanded="true" signature="804:899" ph="{...}" />
+            <marker date="1515503123220" expanded="true" signature="833:885" ph="{...}" />
+            <marker date="1515503123220" expanded="true" signature="944:1333" ph="{...}" />
+            <marker date="1515503123220" expanded="true" signature="1093:1323" ph="{...}" />
+            <marker date="1515503123220" expanded="true" signature="1188:1239" ph="{...}" />
+            <marker date="1515503123220" expanded="true" signature="1377:1718" ph="{...}" />
+            <marker date="1515503123220" expanded="true" signature="1432:1708" ph="{...}" />
+            <marker date="1515503123220" expanded="true" signature="1514:1593" ph="{...}" />
+            <marker date="1515503123220" expanded="true" signature="1614:1694" ph="{...}" />
+            <marker date="1515503123220" expanded="true" signature="1753:2702" ph="{...}" />
+            <marker date="1515503123220" expanded="true" signature="1826:2690" ph="{...}" />
+            <marker date="1515503123220" expanded="true" signature="2108:2646" ph="{...}" />
+            <marker date="1515503123220" expanded="true" signature="2252:2628" ph="{...}" />
+            <marker date="1515503123220" expanded="true" signature="2314:2444" ph="{...}" />
+            <marker date="1515503123220" expanded="true" signature="2473:2606" ph="{...}" />
+            <marker date="1515503123220" expanded="true" signature="2743:3033" ph="{...}" />
+            <marker date="1515503123220" expanded="true" signature="2815:2972" ph="{...}" />
+            <marker date="1515503123220" expanded="true" signature="3070:3311" ph="{...}" />
+            <marker date="1515503123220" expanded="true" signature="3428:3864" ph="{...}" />
+            <marker date="1515503123220" expanded="true" signature="3505:3854" ph="{...}" />
+            <marker date="1515503123220" expanded="true" signature="3709:3789" ph="{...}" />
+            <marker date="1515503123220" expanded="true" signature="3930:4902" ph="{...}" />
+            <marker date="1515503123220" expanded="true" signature="3971:4173" ph="{...}" />
+            <marker date="1515503123220" expanded="true" signature="4035:4159" ph="{...}" />
+            <marker date="1515503123220" expanded="true" signature="4209:4277" ph="{...}" />
+            <marker date="1515503123220" expanded="true" signature="4312:4529" ph="{...}" />
+            <marker date="1515503123220" expanded="true" signature="4381:4515" ph="{...}" />
+            <marker date="1515503123220" expanded="true" signature="4773:4892" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

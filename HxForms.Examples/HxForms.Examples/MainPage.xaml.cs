@@ -13,6 +13,7 @@ namespace HxForms.Examples
 		public MainPage()
 		{
 			InitializeComponent();
+            MorePicker.ItemsSource = new List<string> { "Hello", "World" };
 		}
 	}
 }

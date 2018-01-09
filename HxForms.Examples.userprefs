@@ -1,0 +1,19 @@
+﻿<Properties StartupConfiguration="{C6699462-11D2-414E-A02C-EB645AB43FF5}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="HxForms/Views/Label.cs">
+    <Files>
+      <File FileName="HxForms/Views/MultiPickerItemsModal.cs" Line="104" Column="84" />
+      <File FileName="HxForms/Cells/TextCell.cs" Line="1" Column="1" />
+      <File FileName="HxForms/Cells/Cell.cs" Line="1" Column="1" />
+      <File FileName="HxForms/Cells/CheckBoxCell.cs" Line="1" Column="1" />
+      <File FileName="HxForms/Views/Image.cs" Line="1" Column="1" />
+      <File FileName="HxForms/Views/Label.cs" Line="1" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.HxFormsLibs.HxForms.Droid PreferredExecutionTarget="Android.Pixel_API_26" />
+</Properties>

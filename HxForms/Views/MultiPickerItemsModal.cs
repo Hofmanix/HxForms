@@ -102,7 +102,22 @@ namespace HxForms.Views
         {
             _pickerItems = new ListView();
             _pickerItems.ItemsSource = _itemsList = new List<ItemBindingContext>();
+            _pickerItems.ItemSelected += PickerItemsOnItemSelected;
             SetBinding();
+        }
+
+        private void PickerItemsOnItemSelected(object o, SelectedItemChangedEventArgs selectedItemChangedEventArgs)
+        {
+            if (selectedItemChangedEventArgs.SelectedItem != null)
+            {
+                var item = _pickerItems.TemplatedItems[_itemsList.IndexOf(selectedItemChangedEventArgs.SelectedItem as ItemBindingContext)];
+                if (item is CheckBoxCell cbCell)
+                {
+                    cbCell.On = !cbCell.On;
+                }
+
+                _pickerItems.SelectedItem = null;
+            }
         }
 
         public class ItemBindingContext : INotifyPropertyChanged

@@ -1,14 +1,14 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8" ?>
 <hxPages:BottomBarPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:HxForms.Examples"
              xmlns:hxPages="clr-namespace:HxForms.Pages;assembly=HxForms"
+             xmlns:hxViews="clr-namespace:HxForms.Views;assembly=HxForms"
              x:Class="HxForms.Examples.MainPage">
     <ContentPage Title="First" Icon="globe_black">
         <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+            <hxViews:CheckBox/>
+            <hxViews:MultiPicker x:Name="MorePicker"/>
         </StackLayout>
     </ContentPage>
     <ContentPage Title="Second">
