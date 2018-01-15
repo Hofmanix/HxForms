@@ -13,7 +13,7 @@ namespace HxForms.Examples
 		{
 			InitializeComponent();
 
-			MainPage = new HxForms.Examples.MainPage();
+            MainPage = new NavigationPage(new HxForms.Examples.MainPage());
 		}
 
 		protected override void OnStart ()

@@ -115,8 +115,6 @@ namespace HxForms.Droid.PageRenderers
                     };
                     (_bottomNavigationView.LayoutParameters as Android.Widget.RelativeLayout.LayoutParams)?.AddRule(LayoutRules.AlignParentBottom);
                     _bottomNavigationView.SetOnNavigationItemSelectedListener(this);
-                    _bottomNavigationView.EnableShiftingMode(false);
-                    _bottomNavigationView.EnableItemShiftingMode(false);
 
                     if (_element.BarTextColor != default(Color))
                     {
@@ -143,6 +141,8 @@ namespace HxForms.Droid.PageRenderers
                     }
 
                     _rootLayout.AddView(_bottomNavigationView, 1);
+                    _bottomNavigationView.EnableShiftingMode(false);
+                    _bottomNavigationView.EnableItemShiftingMode(false);
                     ChangeCurrentPage(Element.Children[0]);
                 }
             }

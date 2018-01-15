@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>Hofmanix.HxForms</id>
+    <version>0.0.1-alpha5</version>
+    <authors>hofmanix</authors>
+    <owners>hofmanix</owners>
+    <projectUrl>https://github.com/Hofmanix/HxForms</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Addional views and plugins for Xamarin Forms - currently in development</description>
+    <releaseNotes>Available views (all in development): CheckBox, CheckBoxCell, RepetitiveLayout, BottomBarPage, Label with Html and MaxLength text, MultiPicker</releaseNotes>
+    <copyright>Copyright 2018</copyright>
+    <tags>Xamarin, Xamarin.Forms, Android, iOS, Forms, HxForms</tags>
+    <dependencies>
+      <group targetFramework="MonoAndroid10">
+        <dependency id="Hofmanix.Ittianyu.BottomNavigationViewEx" version="1.2.4.1" />
+      </group>
+      <group targetFramework="xamarinios10">
+        <dependency id="SaturdayMP.XPlugins.iOS.BEMCheckBox" version="1.4.3" />
+      </group>
+    </dependencies>
+  </metadata>
+  <files>
+    <!--NetStandard/PCL-->
+    <file src="HxForms\bin\Release\netstandard1.3\HxForms.*" target="lib\netstandard1.3" />
+    
+    <!--Xamarin.Android-->
+    <file src="HxForms.Droid\bin\Release\HxForms.*" target="lib\MonoAndroid10" />
+
+    <!--Xamarin.iOS-->
+    <file src="HxForms.iOS\bin\Release\HxForms.*" target="lib\Xamarin.iOS10" />
+  </files>
+</package>

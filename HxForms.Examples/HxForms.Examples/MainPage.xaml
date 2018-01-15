@@ -8,10 +8,34 @@
     <ContentPage Title="First" Icon="globe_black">
         <StackLayout>
             <hxViews:CheckBox/>
-            <hxViews:MultiPicker x:Name="MorePicker"/>
+            <hxViews:MultiPicker x:Name="MorePicker" Placeholder="Select multi"/>
+            <hxViews:Label Text="Longer text shortened to just 20 letters" MaxLength="20"/>
+            <hxViews:Label x:Name="HtmlLabel" IsHtml="true"/>
+            <hxViews:Label x:Name="HtmlShortenedLabel" IsHtml="true" MaxLength="15"/>
         </StackLayout>
     </ContentPage>
     <ContentPage Title="Second">
+        <StackLayout>
+            <Label Text="Welcome to Xamarin.Forms 2!"
+                   VerticalOptions="CenterAndExpand" 
+                   HorizontalOptions="CenterAndExpand" />
+        </StackLayout>
+    </ContentPage>
+    <ContentPage Title="Third">
+        <StackLayout>
+            <Label Text="Welcome to Xamarin.Forms 2!"
+                   VerticalOptions="CenterAndExpand" 
+                   HorizontalOptions="CenterAndExpand" />
+        </StackLayout>
+    </ContentPage>
+    <ContentPage Title="Forth">
+        <StackLayout>
+            <Label Text="Welcome to Xamarin.Forms 2!"
+                   VerticalOptions="CenterAndExpand" 
+                   HorizontalOptions="CenterAndExpand" />
+        </StackLayout>
+    </ContentPage>
+    <ContentPage Title="Fifth">
         <StackLayout>
             <Label Text="Welcome to Xamarin.Forms 2!"
                    VerticalOptions="CenterAndExpand" 

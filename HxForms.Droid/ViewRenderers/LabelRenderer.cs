@@ -6,12 +6,16 @@ using Android.Widget;
 using Xamarin.Forms;
 using Xamarin.Forms.Platform.Android;
 using LabelRenderer = HxForms.Droid.ViewRenderers.LabelRenderer;
+using Android.Content;
+using System;
 
 namespace HxForms.Droid.ViewRenderers
 {
     public class LabelRenderer: Xamarin.Forms.Platform.Android.LabelRenderer
     {
         public new Views.Label Element { get; private set; }
+
+        public LabelRenderer(Context context): base(context) {}
 
         protected override void OnElementChanged(ElementChangedEventArgs<Label> e)
         {
@@ -23,7 +27,7 @@ namespace HxForms.Droid.ViewRenderers
 
                 if (hxLabel.MaxLength > 0)
                 {
-                    SetMaxLengthFilter();
+                    Control.Text = CropText(Element.Text);
                 }
 
                 if (hxLabel.IsHtml)
@@ -41,8 +45,11 @@ namespace HxForms.Droid.ViewRenderers
             {
                 if (sender is Views.Label hxLabel && hxLabel.IsHtml)
                 {
-
                     SetHtmlText();
+                }
+                else 
+                {
+                    Control.Text = CropText(Element.Text);
                 }
             }
             if (e.PropertyName == Views.Label.IsHtmlProperty.PropertyName)
@@ -51,7 +58,7 @@ namespace HxForms.Droid.ViewRenderers
             }
             if (e.PropertyName == Views.Label.MaxLengthProperty.PropertyName)
             {
-                SetMaxLengthFilter();
+                Control.SetMaxEms(Element.MaxLength);
             }
         }
 
@@ -59,28 +66,40 @@ namespace HxForms.Droid.ViewRenderers
         {
             if (Build.VERSION.SdkInt >= BuildVersionCodes.N)
             {
-                Control?.SetText(Html.FromHtml(Element.Text, FromHtmlOptions.ModeCompact),
+                Control?.SetText(CropText(Html.FromHtml(Element.Text, FromHtmlOptions.ModeCompact)),
                     TextView.BufferType.Spannable);
             }
             else
             {
-                Control?.SetText(Html.FromHtml(Element.Text),
+                Control?.SetText(CropText(Html.FromHtml(Element.Text)),
                     TextView.BufferType.Spannable);
             }
         }
 
-        private void SetMaxLengthFilter()
+        private string CropText(string text) 
         {
-            if (Control.GetFilters().Any(f => f is InputFilterLengthFilter))
+            if (Element.MaxLength > 0) 
             {
-                Control.SetFilters(Control.GetFilters().Where(f => !(f is InputFilterLengthFilter)).ToArray());
+                return text.Substring(0, Math.Min(Element.MaxLength, text.Length));
             }
-            if (Element.MaxLength > 0)
+            else 
             {
-                var filters = Control.GetFilters().ToList();
-                filters.Add(new InputFilterLengthFilter(Element.MaxLength));
-                Control.SetFilters(filters.ToArray());
+                return text;
             }
         }
+
+        private ISpanned CropText(ISpanned text)
+        {
+            if (Element.MaxLength > 0) 
+            {
+                return (ISpanned) text.SubSequenceFormatted(0, Math.Min(Element.MaxLength, text.Length()));
+            }
+            else
+            {
+                return text;
+            }
+        }
+
+
     }
 }
