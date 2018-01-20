@@ -16,11 +16,11 @@ namespace HxForms.Droid.CellRenderers
     {
         private CheckBoxCellView _view;
 
-        protected override AView GetCellCore(Xamarin.Forms.Cell item, AView contentView, ViewGroup parent, Context context)
+        protected override AView GetCellCore(Xamarin.Forms.Cell item, AView convertView, ViewGroup parent, Context context)
         {
             var cell = (CheckBoxCell) Cell;
 
-            if ((_view = contentView as CheckBoxCellView) == null)
+            if ((_view = convertView as CheckBoxCellView) == null)
             {
                 _view = new CheckBoxCellView(context, item);
             }

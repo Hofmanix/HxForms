@@ -1,0 +1,18 @@
+﻿<Properties StartupConfiguration="{ED7359F5-422F-46EA-A306-D15BA0C38095}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="HxForms.Examples/HxForms.Examples/MainPage.xaml">
+    <Files>
+      <File FileName="HxForms.Droid/ViewRenderers/LabelRenderer.cs" Line="1" Column="1" />
+      <File FileName="HxForms.Droid/PageRenderers/BottomBarPageRenderer.cs" Line="176" Column="40" />
+      <File FileName="HxForms/Pages/BottomBarPage.cs" Line="5" Column="35" />
+      <File FileName="HxForms.Examples/HxForms.Examples/MainPage.xaml" Line="9" Column="29" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.HxForms.Examples.Android PreferredExecutionTarget="Android.Galaxy_Nexus_API_22" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.HxFormsLibs.HxForms.Droid PreferredExecutionTarget="Android.Galaxy_Nexus_API_22" />
+</Properties>

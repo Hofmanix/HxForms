@@ -6,6 +6,9 @@
              xmlns:hxViews="clr-namespace:HxForms.Views;assembly=HxForms"
              x:Class="HxForms.Examples.MainPage">
     <ContentPage Title="First" Icon="globe_black">
+        <ContentPage.ToolbarItems>
+            <ToolbarItem Text="First"/>
+        </ContentPage.ToolbarItems>
         <StackLayout>
             <hxViews:CheckBox/>
             <hxViews:MultiPicker x:Name="MorePicker" Placeholder="Select multi"/>

@@ -64,7 +64,6 @@ namespace HxForms.Droid.PageRenderers
                         pageRenderer.View.RemoveFromParent();
                         pageRenderer.Dispose();
                     }
-                    pageToRemove.PropertyChanged -= OnPagePropertyChanged;
                 }
 
                 if (_bottomNavigationView != null)
@@ -176,30 +175,27 @@ namespace HxForms.Droid.PageRenderers
         {
             Context.HideKeyboard(this);
             _frameLayout.RemoveAllViews();
+
             if (Platform.GetRenderer(page) == null)
             {
-                Platform.SetRenderer(page, Platform.CreateRenderer(page));
+                Platform.SetRenderer(page, Platform.CreateRendererWithContext(page, Context));
             }
-
-            _element.Title = page.Title;
-
-            if (_currentPage != null && _currentPage != page)
-            {
-                foreach (var toolbarItem in _currentPage.ToolbarItems)
-                {
-                    _element.ToolbarItems.Remove(toolbarItem);
-                }
-                foreach (var toolbarItem in page.ToolbarItems)
-                {
-                    _element.ToolbarItems.Add(toolbarItem);
-                }
-            }
-
             _frameLayout.AddView(Platform.GetRenderer(page).View);
+            _currentPage = page;
         }
 
-        private void OnPagePropertyChanged(object sender, PropertyChangedEventArgs e)
+        protected override void OnElementPropertyChanged(object sender, PropertyChangedEventArgs e)
         {
+            base.OnElementPropertyChanged(sender, e);
+
+            if (e.PropertyName == TabbedPage.BarBackgroundColorProperty.PropertyName) 
+            {
+                _bottomNavigationView.SetBackgroundColor(Element.BarBackgroundColor.ToAndroid());
+            }
+            else if (e.PropertyName == TabbedPage.BarTextColorProperty.PropertyName)
+            {
+                _bottomNavigationView.ItemTextColor = ColorStateList.ValueOf(Element.BarTextColor.ToAndroid());
+            }
         }
         
     }

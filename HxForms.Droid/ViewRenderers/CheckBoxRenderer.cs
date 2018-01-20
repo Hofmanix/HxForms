@@ -9,8 +9,14 @@ using CheckBox = HxForms.Views.CheckBox;
 
 namespace HxForms.Droid.ViewRenderers
 {
-    public class CheckBoxRenderer: ViewRenderer<CheckBox, ACheckBox>, CompoundButton.IOnCheckedChangeListener
+    public class CheckBoxRenderer : ViewRenderer<CheckBox, ACheckBox>, CompoundButton.IOnCheckedChangeListener
     {
+        public CheckBoxRenderer(Context context) : base(context) 
+        {
+            AutoPackage = false;
+        }
+
+        [Obsolete]
         public CheckBoxRenderer()
         {
             AutoPackage = false;

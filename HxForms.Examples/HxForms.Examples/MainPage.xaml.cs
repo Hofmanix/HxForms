@@ -8,7 +8,7 @@ using Xamarin.Forms;
 
 namespace HxForms.Examples
 {
-	public partial class MainPage : BottomBarPage
+    public partial class MainPage : BottomBarPage
 	{
 		public MainPage()
 		{
@@ -17,5 +17,5 @@ namespace HxForms.Examples
             HtmlLabel.Text = "<b>Test</b> HTML <i>Label</i>";
             HtmlShortenedLabel.Text = "<b>Test</b> HTML sh <i>Label</i>";
 		}
-	}
+    }
 }
