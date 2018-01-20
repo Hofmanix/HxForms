@@ -171,6 +171,20 @@ namespace HxForms.Droid.PageRenderers
             base.OnLayout(changed, l, t, r, b);
         }
 
+        protected override void OnElementPropertyChanged(object sender, PropertyChangedEventArgs e)
+        {
+            base.OnElementPropertyChanged(sender, e);
+
+            if (e.PropertyName == TabbedPage.BarBackgroundColorProperty.PropertyName)
+            {
+                _bottomNavigationView.SetBackgroundColor(Element.BarBackgroundColor.ToAndroid());
+            }
+            else if (e.PropertyName == TabbedPage.BarTextColorProperty.PropertyName)
+            {
+                _bottomNavigationView.ItemTextColor = ColorStateList.ValueOf(Element.BarTextColor.ToAndroid());
+            }
+        }
+
         private void ChangeCurrentPage(Page page)
         {
             Context.HideKeyboard(this);
@@ -182,20 +196,7 @@ namespace HxForms.Droid.PageRenderers
             }
             _frameLayout.AddView(Platform.GetRenderer(page).View);
             _currentPage = page;
-        }
-
-        protected override void OnElementPropertyChanged(object sender, PropertyChangedEventArgs e)
-        {
-            base.OnElementPropertyChanged(sender, e);
-
-            if (e.PropertyName == TabbedPage.BarBackgroundColorProperty.PropertyName) 
-            {
-                _bottomNavigationView.SetBackgroundColor(Element.BarBackgroundColor.ToAndroid());
-            }
-            else if (e.PropertyName == TabbedPage.BarTextColorProperty.PropertyName)
-            {
-                _bottomNavigationView.ItemTextColor = ColorStateList.ValueOf(Element.BarTextColor.ToAndroid());
-            }
+            Element.CurrentPage = page;
         }
         
     }
