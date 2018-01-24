@@ -1,11 +1,13 @@
-﻿<Properties StartupConfiguration="{ED7359F5-422F-46EA-A306-D15BA0C38095}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="HxForms.Examples/HxForms.Examples/MainPage.xaml.cs">
+﻿<Properties StartupConfiguration="{C6699462-11D2-414E-A02C-EB645AB43FF5}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="HxForms.iOS/HxForms.cs">
     <Files>
-      <File FileName="HxForms.Droid/ViewRenderers/LabelRenderer.cs" Line="1" Column="1" />
-      <File FileName="HxForms.Droid/PageRenderers/BottomBarPageRenderer.cs" Line="199" Column="40" />
-      <File FileName="HxForms/Pages/BottomBarPage.cs" Line="5" Column="35" />
-      <File FileName="HxForms.Examples/HxForms.Examples/MainPage.xaml" Line="48" Column="25" />
-      <File FileName="HxForms.Examples/HxForms.Examples/MainPage.xaml.cs" Line="29" Column="1" />
+      <File FileName="HxForms.Examples/HxForms.Examples/MainPage.xaml.cs" Line="26" Column="10" />
+      <File FileName="HxForms/Cells/CheckBoxCell.cs" Line="1" Column="1" />
+      <File FileName="HxForms.Droid/CellRenderers/CheckBoxCellView.cs" Line="1" Column="1" />
+      <File FileName="HxForms.Droid/CellRenderers/CheckBoxCellRenderer.cs" Line="11" Column="1" />
+      <File FileName="HxForms.Droid/Properties/AssemblyInfo.cs" Line="35" Column="28" />
+      <File FileName="HxForms.Examples/HxForms.Examples/MainPage.xaml" Line="22" Column="22" />
+      <File FileName="HxForms.iOS/HxForms.cs" Line="12" Column="41" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.ItemProperties.HxForms.Examples.Android PreferredExecutionTarget="Android.Galaxy_Nexus_API_22" />

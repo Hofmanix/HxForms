@@ -10,8 +10,6 @@ namespace HxForms.iOS
             CheckBoxRenderer.InitRenderer();
             LabelRenderer.InitRenderer();
             CheckBoxCellRenderer.Init();
-            CellRenderer.Init();
-            TextCellRenderer.Init();
         }
     }
 }

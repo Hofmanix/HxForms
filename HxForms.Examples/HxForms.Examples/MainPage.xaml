@@ -4,6 +4,7 @@
              xmlns:local="clr-namespace:HxForms.Examples"
              xmlns:hxPages="clr-namespace:HxForms.Pages;assembly=HxForms"
              xmlns:hxViews="clr-namespace:HxForms.Views;assembly=HxForms"
+             xmlns:hxCells="clr-namespace:HxForms.Cells;assembly=HxForms"
              x:Class="HxForms.Examples.MainPage">
     <ContentPage Title="First" Icon="globe_black">
         <ContentPage.ToolbarItems>
@@ -19,9 +20,6 @@
     </ContentPage>
     <ContentPage Title="Second">
         <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms 2!"
-                   VerticalOptions="CenterAndExpand" 
-                   HorizontalOptions="CenterAndExpand" />
         </StackLayout>
     </ContentPage>
     <ContentPage Title="Third">

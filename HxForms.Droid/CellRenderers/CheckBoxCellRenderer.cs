@@ -9,7 +9,6 @@ using Xamarin.Forms.Platform.Android;
 using AView = Android.Views.View;
 using ACheckBox = Android.Widget.CheckBox;
 
-[assembly: ExportRenderer(typeof(HxForms.Cells.Cell), typeof(HxForms.Droid.CellRenderers.CellRenderer))]
 namespace HxForms.Droid.CellRenderers
 {
     public class CheckBoxCellRenderer: CellRenderer
