@@ -2,6 +2,9 @@
 using System.Collections;
 using System.IO;
 using Xamarin.Forms;
+using System.Collections.ObjectModel;
+using Xamarin.Forms.Internals;
+using System.Collections.Specialized;
 
 namespace HxForms.Layouts
 {
@@ -24,7 +27,19 @@ namespace HxForms.Layouts
         public IEnumerable ItemsSource
         {
             get => (IEnumerable) GetValue(ItemsSourceProperty);
-            set => SetValue(ItemsSourceProperty, value);
+            set 
+            {
+                var oldSource = (IEnumerable)GetValue(ItemsSourceProperty);
+                if (oldSource is INotifyCollectionChanged observable) 
+                {
+                    observable.CollectionChanged -= ObservableCollectionChanged;
+                }
+                if (value is INotifyCollectionChanged newObservable)
+                {
+                    newObservable.CollectionChanged += ObservableCollectionChanged;
+                }
+                SetValue(ItemsSourceProperty, value);
+            }
         }
 
         public DataTemplate ItemTemplate
@@ -74,6 +89,11 @@ namespace HxForms.Layouts
                 })
             });
             return view;
+        }
+
+        private void ObservableCollectionChanged(object sender, NotifyCollectionChangedEventArgs e)
+        {
+            ItemsChanged();
         }
     }
 }

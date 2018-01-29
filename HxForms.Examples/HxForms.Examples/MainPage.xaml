@@ -5,6 +5,7 @@
              xmlns:hxPages="clr-namespace:HxForms.Pages;assembly=HxForms"
              xmlns:hxViews="clr-namespace:HxForms.Views;assembly=HxForms"
              xmlns:hxCells="clr-namespace:HxForms.Cells;assembly=HxForms"
+             xmlns:hxLayouts="clr-namespace:HxForms.Layouts;assembly=HxForms"
              x:Class="HxForms.Examples.MainPage">
     <ContentPage Title="First" Icon="globe_black">
         <ContentPage.ToolbarItems>
@@ -20,27 +21,25 @@
     </ContentPage>
     <ContentPage Title="Second">
         <StackLayout>
+            <Button x:Name="AddPageButton" Text="Add Page" Clicked="Handle_Clicked"/>
         </StackLayout>
     </ContentPage>
-    <ContentPage Title="Third">
+    <ContentPage x:Name="Third" Title="Third">
         <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms 2!"
-                   VerticalOptions="CenterAndExpand" 
-                   HorizontalOptions="CenterAndExpand" />
+            <Entry TextChanged="Handle_TextChanged" Text="Third"/>
         </StackLayout>
     </ContentPage>
     <ContentPage Title="Forth">
         <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms 2!"
-                   VerticalOptions="CenterAndExpand" 
-                   HorizontalOptions="CenterAndExpand" />
-        </StackLayout>
-    </ContentPage>
-    <ContentPage Title="Fifth">
-        <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms 2!"
-                   VerticalOptions="CenterAndExpand" 
-                   HorizontalOptions="CenterAndExpand" />
+            <hxLayouts:RepetitiveLayout x:Name="RepetitiveTest">
+                <hxLayouts:RepetitiveLayout.ItemTemplate>
+                    <DataTemplate>
+                        <Image Source="book.png" WidthRequest="150"/>
+                    </DataTemplate>
+                </hxLayouts:RepetitiveLayout.ItemTemplate>
+            </hxLayouts:RepetitiveLayout>
+            <Entry x:Name="NewItemEntry"/>
+            <Button Text="Add new item" Clicked="Handle_NewItemClicked"/>
         </StackLayout>
     </ContentPage>
 </hxPages:BottomBarPage>

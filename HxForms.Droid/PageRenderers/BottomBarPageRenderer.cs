@@ -14,6 +14,9 @@ using HxForms.Droid.Utils;
 using HxForms.Pages;
 using Xamarin.Forms;
 using Xamarin.Forms.Platform.Android;
+using Java.Lang;
+using System.Threading.Tasks;
+using System.Linq;
 
 namespace HxForms.Droid.PageRenderers
 {
@@ -27,6 +30,8 @@ namespace HxForms.Droid.PageRenderers
         private Page _currentPage;
         private FrameLayout _frameLayout;
         private Dictionary<IMenuItem, Page> _menuPages = new Dictionary<IMenuItem, Page>();
+        private Dictionary<IMenuItem, int> _menuIds = new Dictionary<IMenuItem, int>();
+        private int _newId = 0;
 
         [Obsolete]
         public BottomBarPageRenderer()
@@ -128,21 +133,15 @@ namespace HxForms.Droid.PageRenderers
                     
                     foreach (var page in Element.Children)
                     {
-                        var menuItem = _bottomNavigationView.Menu.Add(page.Title);
-                        if (page.Icon != null)
-                        {
-                            var fileImageSourceHandler = page.Icon.GetHandler();
-                            var bitmap = await fileImageSourceHandler.LoadImageAsync(page.Icon, Context);
-                            var bitmapDrawable = new BitmapDrawable(bitmap);
-                            menuItem.SetIcon(bitmapDrawable);
-                        }
-                        _menuPages[menuItem] = page;
+                        await AddPage(page);
                     }
 
                     _rootLayout.AddView(_bottomNavigationView, 1);
                     _bottomNavigationView.EnableShiftingMode(false);
                     _bottomNavigationView.EnableItemShiftingMode(false);
                     ChangeCurrentPage(Element.Children[0]);
+                    _element.ChildAdded += Element_ChildAdded;
+                    _element.ChildRemoved += Element_ChildRemoved;
                 }
             }
         }
@@ -159,7 +158,7 @@ namespace HxForms.Droid.PageRenderers
                 _rootLayout.Layout(0, 0, _rootLayout.MeasuredWidth, _rootLayout.MeasuredHeight);
 
                 _bottomNavigationView.Measure(MeasureSpecFactory.MakeMeasureSpec(width, MeasureSpecMode.Exactly), MeasureSpecFactory.MakeMeasureSpec(height, MeasureSpecMode.AtMost));
-                int tabsHeight = Math.Min(height, Math.Max(_bottomNavigationView.MeasuredHeight, _bottomNavigationView.MinimumHeight));
+                int tabsHeight = System.Math.Min(height, System.Math.Max(_bottomNavigationView.MeasuredHeight, _bottomNavigationView.MinimumHeight));
 
                 _frameLayout.Layout(0, 0, width, height - tabsHeight);
 
@@ -198,6 +197,47 @@ namespace HxForms.Droid.PageRenderers
             _currentPage = page;
             Element.CurrentPage = page;
         }
-        
+
+        void Page_PropertyChanged(object sender, PropertyChangedEventArgs e)
+        {
+            if (e.PropertyName == Page.TitleProperty.PropertyName)
+            {
+                var page = sender as Page;
+                var index = Element.Children.IndexOf(page);
+                _bottomNavigationView.Menu.GetItem(index).SetTitle(page.Title);
+            }
+        }
+
+        async void Element_ChildAdded(object sender, ElementEventArgs e)
+        {
+            await AddPage(e.Element as Page);
+            _bottomNavigationView.EnableShiftingMode(false);
+            _bottomNavigationView.EnableItemShiftingMode(false);
+        }
+
+        void Element_ChildRemoved(object sender, ElementEventArgs e)
+        {
+            var menuItem = _menuPages.First(kv => kv.Value == e.Element).Key;
+            _bottomNavigationView.Menu.RemoveItem(_menuIds[menuItem]);
+            _menuPages.Remove(menuItem);
+            _bottomNavigationView.EnableShiftingMode(false);
+            _bottomNavigationView.EnableItemShiftingMode(false);
+        }
+
+        async Task AddPage(Page page)
+        {
+            var menuItem = _bottomNavigationView.Menu.Add(0, _newId, 0, page.Title);
+            if (page.Icon != null)
+            {
+                var fileImageSourceHandler = page.Icon.GetHandler();
+                var bitmap = await fileImageSourceHandler.LoadImageAsync(page.Icon, Context);
+                var bitmapDrawable = new BitmapDrawable(bitmap);
+                menuItem.SetIcon(bitmapDrawable);
+            }
+            _menuPages[menuItem] = page;
+            _menuIds[menuItem] = _newId;
+            _newId++;
+            page.PropertyChanged += Page_PropertyChanged;
+        }
     }
 }
